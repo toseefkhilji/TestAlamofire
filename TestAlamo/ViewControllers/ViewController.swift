@@ -14,36 +14,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var tblview: UITableView!
     var contacts : [Contact] = []
     var colors : [UIColor] = []
+    var isNowLoading = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        self.title = "Contacts"
+        isNowLoading = true
+        self.tblview.reloadData()
         self.tblview.showLoader()
+
         APIManager.getContacts { (isSuccess, contacts) in
             if(isSuccess){
                 debugPrint(contacts)
                 self.contacts = contacts
                 self.colors = randomColors(count:contacts.count ,luminosity: .light)
                 self.tblview.hideLoader()
+                self.isNowLoading = false
                 self.tblview.reloadData()
             }
         }
     }
     
-    
-    func removeLoader()
-    {
-        self.tblview.hideLoader()
-    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             let destVC : ContactDetailVC = segue.destination as! ContactDetailVC
             destVC.contact = contacts[(tblview.indexPathForSelectedRow?.row)!]
+            destVC.headerColor = colors[(tblview.indexPathForSelectedRow?.row)!]
         }
     }
 }
@@ -51,16 +51,26 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.count
+        if isNowLoading {
+            return 10 //as example
+        }
+        else{
+            return contacts.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! ContactCell
-        let contact = contacts[indexPath.row]
-        cell.lblIcon.backgroundColor = colors[indexPath.row]
-        cell.lblIcon.text = String(contact.name.characters.prefix(1))
-        cell.lblName.text = contact.name
-        cell.lblPhone.text = contact.phone.mobile
+        if isNowLoading{
+            //do nothing
+            return cell
+        }else{
+            let contact = contacts[indexPath.row]
+            cell.lblIcon.backgroundColor = colors[indexPath.row]
+            cell.lblIcon.text = String(contact.name.characters.prefix(1))
+            cell.lblName.text = contact.name
+            cell.lblPhone.text = contact.phone.mobile
+        }
         return cell
     }
 }

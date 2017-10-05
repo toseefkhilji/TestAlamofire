@@ -10,7 +10,6 @@
 		152FAF481F74E4F700301AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF471F74E4F700301AE7 /* AppDelegate.swift */; };
 		152FAF4D1F74E4F700301AE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152FAF4B1F74E4F700301AE7 /* Main.storyboard */; };
 		152FAF4F1F74E4F700301AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152FAF4E1F74E4F700301AE7 /* Assets.xcassets */; };
-		152FAF521F74E4F700301AE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152FAF501F74E4F700301AE7 /* LaunchScreen.storyboard */; };
 		152FAF701F75136600301AE7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF661F75136600301AE7 /* Contact.swift */; };
 		152FAF711F75136600301AE7 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF671F75136600301AE7 /* Phone.swift */; };
 		152FAF721F75136600301AE7 /* APIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF691F75136600301AE7 /* APIExtensions.swift */; };
@@ -20,9 +19,11 @@
 		152FAF761F75136600301AE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF6F1F75136600301AE7 /* ViewController.swift */; };
 		152FAF781F75189F00301AE7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF771F75189F00301AE7 /* DetailViewController.swift */; };
 		152FAF7A1F75279E00301AE7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152FAF791F75279E00301AE7 /* Environment.swift */; };
+		15417F141F83AC2C0077E86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15417F121F83AC2C0077E86A /* LaunchScreen.storyboard */; };
 		156313571F83597700D6A0EA /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156313561F83597700D6A0EA /* UINavigationBarExtension.swift */; };
 		1563135B1F83597700D6A0EA /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1563135A1F83597700D6A0EA /* ContactDetailVC.swift */; };
 		156313641F83597700D6A0EA /* ListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156313611F83597700D6A0EA /* ListLoader.swift */; };
+		15EBFF2B1F84E50A0022DB9C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EBFF2A1F84E50A0022DB9C /* UIView+Extension.swift */; };
 		2037347D764D653034359994 /* Pods_TestAlamo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65561C19168C22E987C9A859 /* Pods_TestAlamo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +32,6 @@
 		152FAF471F74E4F700301AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		152FAF4C1F74E4F700301AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152FAF4E1F74E4F700301AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		152FAF511F74E4F700301AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152FAF531F74E4F700301AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		152FAF661F75136600301AE7 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		152FAF671F75136600301AE7 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
@@ -42,9 +42,12 @@
 		152FAF6F1F75136600301AE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		152FAF771F75189F00301AE7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		152FAF791F75279E00301AE7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		156313561F83597700D6A0EA /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationBarExtension.swift; path = Extenstions/UINavigationBarExtension.swift; sourceTree = "<group>"; };
+		15417F131F83AC2C0077E86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15427A101F85E85B00C46767 /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		156313561F83597700D6A0EA /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		1563135A1F83597700D6A0EA /* ContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
 		156313611F83597700D6A0EA /* ListLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListLoader.swift; path = Classes/ListLoader.swift; sourceTree = "<group>"; };
+		15EBFF2A1F84E50A0022DB9C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		65561C19168C22E987C9A859 /* Pods_TestAlamo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAlamo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E49EE79803D11D0FC30BAE /* Pods-TestAlamo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAlamo/Pods-TestAlamo.release.xcconfig"; sourceTree = "<group>"; };
 		D1F46ECB07856501AB461C72 /* Pods-TestAlamo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAlamo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAlamo/Pods-TestAlamo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		152FAF461F74E4F700301AE7 /* TestAlamo */ = {
 			isa = PBXGroup;
 			children = (
+				15427A0E1F85E57D00C46767 /* Playground */,
 				152FAF471F74E4F700301AE7 /* AppDelegate.swift */,
 				152FAF4B1F74E4F700301AE7 /* Main.storyboard */,
 				152FAF6E1F75136600301AE7 /* ViewControllers */,
@@ -99,9 +103,8 @@
 				152FAF6C1F75136600301AE7 /* Utils */,
 				1563135C1F83597700D6A0EA /* ListPlaceholder */,
 				152FAF4E1F74E4F700301AE7 /* Assets.xcassets */,
-				152FAF501F74E4F700301AE7 /* LaunchScreen.storyboard */,
+				15417F121F83AC2C0077E86A /* LaunchScreen.storyboard */,
 				152FAF531F74E4F700301AE7 /* Info.plist */,
-				156313561F83597700D6A0EA /* UINavigationBarExtension.swift */,
 			);
 			path = TestAlamo;
 			sourceTree = "<group>";
@@ -128,6 +131,8 @@
 		152FAF6C1F75136600301AE7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				15EBFF2A1F84E50A0022DB9C /* UIView+Extension.swift */,
+				156313561F83597700D6A0EA /* UINavigationBarExtension.swift */,
 				152FAF791F75279E00301AE7 /* Environment.swift */,
 				152FAF6D1F75136600301AE7 /* Constant.swift */,
 			);
@@ -142,6 +147,14 @@
 				152FAF771F75189F00301AE7 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		15427A0E1F85E57D00C46767 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				15427A101F85E85B00C46767 /* MyPlayground2.playground */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 		1563135C1F83597700D6A0EA /* ListPlaceholder */ = {
@@ -196,7 +209,7 @@
 				TargetAttributes = {
 					152FAF431F74E4F700301AE7 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -223,7 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152FAF521F74E4F700301AE7 /* LaunchScreen.storyboard in Resources */,
+				15417F141F83AC2C0077E86A /* LaunchScreen.storyboard in Resources */,
 				152FAF4F1F74E4F700301AE7 /* Assets.xcassets in Resources */,
 				152FAF4D1F74E4F700301AE7 /* Main.storyboard in Resources */,
 			);
@@ -292,6 +305,7 @@
 				156313641F83597700D6A0EA /* ListLoader.swift in Sources */,
 				152FAF751F75136600301AE7 /* Constant.swift in Sources */,
 				152FAF701F75136600301AE7 /* Contact.swift in Sources */,
+				15EBFF2B1F84E50A0022DB9C /* UIView+Extension.swift in Sources */,
 				152FAF481F74E4F700301AE7 /* AppDelegate.swift in Sources */,
 				1563135B1F83597700D6A0EA /* ContactDetailVC.swift in Sources */,
 				152FAF721F75136600301AE7 /* APIExtensions.swift in Sources */,
@@ -311,10 +325,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		152FAF501F74E4F700301AE7 /* LaunchScreen.storyboard */ = {
+		15417F121F83AC2C0077E86A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				152FAF511F74E4F700301AE7 /* Base */,
+				15417F131F83AC2C0077E86A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -422,11 +436,14 @@
 			baseConfigurationReference = D1F46ECB07856501AB461C72 /* Pods-TestAlamo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAlamo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tosa.TestAlamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -437,11 +454,14 @@
 			baseConfigurationReference = 66E49EE79803D11D0FC30BAE /* Pods-TestAlamo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAlamo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tosa.TestAlamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
